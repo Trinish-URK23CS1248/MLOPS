@@ -26,6 +26,11 @@ jobs:
       - name: Train Model and Save Artifacts
         run: |
           python mlops_pipeline.py
+          mkdir -p artifacts
+          python train.py
+          ls artifacts
+
+        
 
       - name: Upload Trained Model
         uses: actions/upload-artifact@v4
