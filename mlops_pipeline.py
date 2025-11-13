@@ -16,7 +16,7 @@ from sklearn.metrics import mean_squared_error, accuracy_score
 import joblib
 import os
 
-MODEL_TYPE = "RandomForest"  # Options: LinearRegression / DecisionTree / RandomForest
+MODEL_TYPE = "DecisionTree"  # Options: LinearRegression / DecisionTree / RandomForest
 DATA_PATH = "data.csv"
 
 print("📥 Loading dataset...")
